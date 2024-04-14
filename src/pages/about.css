@@ -1,0 +1,28 @@
+.about {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -3;
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: -9999;
+  filter: brightness(150%);
+  mix-blend-mode: multiply;
+}
+.text {
+  position: fixed;
+  z-index: 20;
+  top: 300;
+  margin-top: 20vh;
+  font-size: 6vh;
+  margin: 30vh;
+  text-align: center;
+  mix-blend-mode: exclusion;
+  color: rgb(255, 39, 190);
+}
+.main {
+  height: 100%;
+  width: 100%;
+}
