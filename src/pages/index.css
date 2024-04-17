@@ -235,9 +235,8 @@ section.panner div.world {
   grid-template-columns: 300px 300px 300px 300px 300px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 10%;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 @media (max-width: 767px) {
   body {
@@ -270,6 +269,7 @@ nav {
   padding: 8px;
   z-index: 300;
   width: 100vw;
+  min-width: max-content;
   padding: 1fr;
   text-align: left;
   animation: gradient 15s ease infinite;

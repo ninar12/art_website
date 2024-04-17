@@ -60,9 +60,9 @@ function App() {
         <PanComponent style={showPopup ? { overlay: "blur(10px)" } : {}}>
           <ImageList
             variant="masonry"
-            cols={isSmallScreen ? 1 : 3}
-            gap={100}
-            rowGap={80}>
+            cols={isSmallScreen ? 1 : 4}
+            //gap={}
+          >
             <div class="card">
               <LazyLoadImage
                 effect="blur"
