@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import instagram from "../assets/images/img_1.png"
 import tiktok from "../assets/images/img_2.png"
 import { useSpring, animated } from "@react-spring/web"
-
+import header from "../assets/images/header.jpg"
 function MyComponent() {
   const [props, api] = useSpring(
     () => ({
@@ -38,19 +38,20 @@ const Nav = () => {
             <a href="mailto:aegis_ingot_0h@icloud.com">CONTACT</a>
           </div>
         </div>
-        <h1>
-          <a
-            class="no-styling"
-            style={{
-              color: "inherit",
-              textDecoration: "none",
-              fontWeight: "bold",
-              backgroundColor: "none",
-            }}
-            href="/">
-            NINA RHONE ART
-          </a>
-        </h1>
+        <a
+          class="no-styling"
+          style={{
+            color: "inherit",
+            textDecoration: "none",
+            fontWeight: "bold",
+            backgroundColor: "none",
+            padding: "0",
+            textAlign: "center",
+          }}
+          href="/">
+          <img height="40" style={{ mixBlendMode: "multiply" }} src={header} />
+        </a>
+
         <div
           style={{
             display: "flex",

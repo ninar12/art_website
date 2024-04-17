@@ -5,10 +5,11 @@
   display: grid;
   grid-template-columns: 1fr;
   z-index: 1000;
-  top: 25%;
+  top: 50%;
   row-gap: 2vh;
-  left: 30%;
+  left: 50%;
   max-width: 50%;
+  transform: translate(-50%, -50%);
 }
 .contact_info {
   height: 40px;

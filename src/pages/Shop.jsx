@@ -3,7 +3,6 @@ import bathroomImage from "../assets/images/bathroom.jpeg"
 import Nav from "../components/nav"
 import "./shop.css"
 import "./index.css"
-import commission from "../assets/images/work_.png"
 import Box from "@mui/material/Box"
 import ImageList from "@mui/material/ImageList"
 import ImageListItem from "@mui/material/ImageListItem"
@@ -30,6 +29,7 @@ const Shop = () => {
       alt: "Sketch of bathroom graphic art",
       size: "6 x 8",
       price: "40$ + shipping",
+      class: "",
     },
     {
       src: logo,
@@ -37,6 +37,7 @@ const Shop = () => {
       alt: "red image",
       size: "Your choice",
       price: "🤨$ depends",
+      class: "edit",
     },
   ]
   return (
@@ -70,7 +71,8 @@ const Shop = () => {
                         src={`${item.src}?w=248&fit=crop&auto=format`}
                         alt={item.alt}
                         loading="lazy"
-                        className="img-list"
+                        className={`img-list ${item.class}`}
+
                         // Add this line
                       />
                       <h2>{item.title}</h2>

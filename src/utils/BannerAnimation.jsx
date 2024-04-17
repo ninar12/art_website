@@ -13,7 +13,7 @@ import {
 import { easing } from "maath"
 import "../pages/index.css"
 import "./util"
-import work from "../assets/images/work_.png"
+import work from "../assets/images/_work.JPEG"
 import img_1 from "../assets/images/img_1.png"
 import img_2 from "../assets/images/img_2.png"
 import img_3 from "../assets/images/img_3.png"

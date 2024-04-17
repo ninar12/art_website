@@ -23,6 +23,11 @@ body {
   z-index: -1;
 }
 
+.edit {
+  background-color: rgb(255, 0, 0);
+  filter: contrast(1.5) saturate(0);
+}
+
 .print-block {
   font-size: 1rem;
   font-weight: 400;

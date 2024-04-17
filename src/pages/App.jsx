@@ -24,11 +24,29 @@ import "./index.css"
 function App() {
   const [showPopup, setShowPopup] = useState(false)
   const [currentPainting, setCurrentPainting] = useState("")
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768)
+
   const togglePopup = (e, painting) => {
     e.preventDefault()
     setCurrentPainting(painting)
     setShowPopup(!showPopup)
   }
+  useEffect(() => {
+    const handleResize = () => {
+      if (window && document.documentElement) {
+        setIsSmallScreen(document.documentElement.clientWidth < 768)
+      }
+    }
+
+    // Attach event listener
+    window.addEventListener("resize", handleResize)
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize()
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   return (
     <div>
@@ -40,7 +58,11 @@ function App() {
       ) : null}
       <section class="panner">
         <PanComponent style={showPopup ? { overlay: "blur(10px)" } : {}}>
-          <ImageList variant="masonry" cols={3} gap={100} rowGap={80}>
+          <ImageList
+            variant="masonry"
+            cols={isSmallScreen ? 1 : 3}
+            gap={100}
+            rowGap={80}>
             <div class="card">
               <LazyLoadImage
                 effect="blur"

@@ -15,7 +15,6 @@
 .banner-canvas {
   height: 100vh;
   width: 100%;
-  opacity: 0.2;
   transition: height 0.5s ease-in-out, width 0.5s ease-in-out; /* Add this line */
 }
 button {
@@ -196,9 +195,9 @@ nav a:hover {
   mix-blend-mode: exclusion;
   background-color: white;
   cursor: pointer;
-  mix-blend-mode: exclusion;
   animation: fadeIn 2s ease-in-out;
 }
+
 .image-section h2 {
   text-align: center;
   position: sticky;
@@ -334,6 +333,7 @@ section.panner img {
 .card:hover .card-content {
   transform: rotateY(360deg);
   z-index: 2;
+  border: 1px red solid;
 }
 .card-content .label {
   font-size: small;
