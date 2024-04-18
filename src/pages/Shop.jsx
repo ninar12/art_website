@@ -75,7 +75,7 @@ const Shop = () => {
 
                         // Add this line
                       />
-                      <h2>{item.title}</h2>
+                      <h3>{item.title}</h3>
                       <p>{item.size}</p>
                       <p>{item.price}</p>
                       <button

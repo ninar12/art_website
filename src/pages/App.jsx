@@ -59,8 +59,9 @@ function App() {
       <section class="panner">
         <PanComponent style={showPopup ? { overlay: "blur(10px)" } : {}}>
           <ImageList
+            gap={60}
             variant="masonry"
-            cols={isSmallScreen ? 1 : 4}
+            cols={isSmallScreen ? 1 : 3}
             //gap={}
           >
             <div class="card">
